@@ -1,37 +1,59 @@
 .hero {
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    background-color: #F07F2E;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  background-color: #f07f2e;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/picture1-1x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url(../img/picture1.jpg);
-    height: 480px;
-    border-radius: 16px;
+  }
+  min-height: 200px;
+
+  border-radius: 16px;
+  padding-left: 18px;
+  padding-bottom: 20px;
+  @include tablet {
+    min-height: 480px;
     padding-left: 28px;
     padding-bottom: 52px;
+  }
 }
 
-.hero__information{
-    padding: 24px;
-    color: #FFFFFF;
+.hero__information {
+  padding: 10px;
+  color: #ffffff;
+  width: 200px;
+  height: 150px;
+  @include tablet {
     width: 430px;
     height: 190px;
-    background-color: #0F3F3C;
-    border-radius: 16px;
+    padding: 24px;
+  }
+  background-color: #0f3f3c;
+  border-radius: 16px;
 }
 
-.hero__information--title{
-    font-weight: 700;
+.hero__information--title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 1.25px;
+  margin-bottom: 8px;
+  @include tablet {
     font-size: 32px;
-    line-height: 1;
-    letter-spacing: 1.25px;
-    margin-bottom: 8px;
+  }
 }
 
-.hero__information--text{
+.hero__information--text {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  @include tablet {
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
+  }
 }

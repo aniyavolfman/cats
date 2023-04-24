@@ -13,16 +13,24 @@
   line-height: 1.67;
   letter-spacing: 0.5px;
   color: #f07f2e;
+  flex-wrap: wrap;
 }
 
 .header__navigation {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .header__navigation--list {
   display: flex;
-  gap: 40px;
+  gap: 10px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  @include tablet {
+    gap: 40px;
+    flex-direction: row;
+  }
 
   & a {
     font-weight: 700;
