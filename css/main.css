@@ -57,6 +57,7 @@ img {
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  cursor: url("../cursor2.png"), auto;
 }
 
 .list {
