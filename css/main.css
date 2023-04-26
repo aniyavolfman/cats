@@ -307,17 +307,7 @@ body {
   border-radius: 16px;
   overflow: hidden;
 }
-@media screen and (min-width: 480px) {
-  .gallery li {
-    flex-basis: calc((100% - 16px) / 2);
-  }
-}
 @media screen and (min-width: 768px) {
-  .gallery li {
-    flex-basis: calc((100% - 32px) / 3);
-  }
-}
-@media screen and (min-width: 1200px) {
   .gallery li {
     flex-basis: calc((100% - 80px) / 6);
   }

@@ -9,23 +9,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include mobile {
-      flex-basis: calc((100% - 1 * 16px) / 2);
+    @include tablet {
+      flex-basis: calc((100% - 80px) / 6);
     }
 
-    @include tablet {
-      flex-basis: calc((100% - 2 * 16px) / 3);
-    }
-    @include desktop {
-      flex-basis: calc((100% - 5 * 16px) / 6);
-    }
     border-radius: 16px;
     overflow: hidden;
   }
 
-   & img {
+  & img {
     border-radius: 16px;
-   }
+  }
 
   & li:hover,
   & li:focus {
