@@ -1,11 +1,20 @@
 .section {
-  margin-top: 60px;
+  margin-top: 20px;
+  @include tablet {
+    margin-top: 60px;
+  }
 }
 
 .section__title {
   font-weight: 700;
-  font-size: 24px;
-  line-height: 1.67;
+  font-size: 18px;
+  line-height: 1;
+  text-align: center;
+  @include tablet {
+    font-size: 24px;
+    line-height: 1.67;
+    text-align: left;
+  }
   letter-spacing: 0.5px;
   color: #2c2c2c;
 }
@@ -19,21 +28,23 @@
 }
 
 .section__list {
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
-  justify-content: space-between;
+  gap: 10px;
+  justify-content: center;
   @include tablet {
     justify-content: space-evenly;
     font-size: 16px;
+    gap: 40px;
 
   }
 
   & li {
     overflow: hidden;
     border-radius: 16px;
+
   }
   & li:hover,
   & li:focus {
@@ -46,9 +57,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  @include tablet {
-    max-width: 200px;
-  }
+  max-width: 200px;
   @include desktop {
     max-width: 288px;
   }

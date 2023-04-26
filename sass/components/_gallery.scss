@@ -6,7 +6,9 @@
   justify-content: center;
 
   & li {
-   width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include mobile {
       flex-basis: calc((100% - 1 * 16px) / 2);
     }
@@ -20,6 +22,10 @@
     border-radius: 16px;
     overflow: hidden;
   }
+
+   & img {
+    border-radius: 16px;
+   }
 
   & li:hover,
   & li:focus {

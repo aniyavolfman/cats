@@ -12,9 +12,13 @@
 }
 
 .page-footer__text {
+  margin-top: 8px;
   font-family: 'Montserrat';
+  font-size: 12px;
+  @include mobile {
+    font-size: 16px;
+  }
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.5px;
   color: #ffffff;
@@ -23,6 +27,12 @@
 .social-links {
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
+  justify-content: end;
+  @include mobile {
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
 
   & a {
     display: flex;

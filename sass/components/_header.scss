@@ -9,7 +9,10 @@
   align-items: center;
   gap: 8px;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
+  @include tablet {
+    font-size: 24px;
+  }
   line-height: 1.67;
   letter-spacing: 0.5px;
   color: #f07f2e;
@@ -24,21 +27,26 @@
 
 .header__navigation--list {
   display: flex;
-  gap: 10px;
+  gap: 5px;
+  align-items: end;
   flex-direction: column;
   flex-wrap: wrap;
   @include tablet {
+    align-items: start;
     gap: 40px;
     flex-direction: row;
   }
 
   & a {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.5;
     align-items: center;
     letter-spacing: 0.5px;
     color: #2c2c2c;
+    @include tablet{
+      font-size: 16px;
+    }
   }
 
   & a:hover,
