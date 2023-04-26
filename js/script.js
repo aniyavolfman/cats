@@ -32,3 +32,31 @@ function handleScroll() {
 }
 
 window.addEventListener('scroll', handleScroll);
+
+const title = document.querySelector('#title');
+
+const colors = ['tomato', '#9C6FE2', '#D7F463'];
+
+let i = 0;
+
+const intervalId = setInterval(() => {
+  title.style.color = colors[i];
+  i += 1;
+  if (i >= colors.length) {
+    i = 0;
+  }
+}, 1000);
+
+const nyavText = 'няв-няв-няв';
+const nyav = document.querySelector('#hero__text');
+
+let c = 0;
+function typeNyav() {
+  if (c < nyavText.length) {
+    nyav.innerHTML += nyavText.charAt(c);
+    c += 1;
+    setTimeout(typeNyav, 150);
+  }
+}
+
+typeNyav();

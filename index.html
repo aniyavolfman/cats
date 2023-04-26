@@ -19,7 +19,7 @@
     <link rel="manifest" href="./site.webmanifest">
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="up">
       <div class="header__container container">
         <a href="" class="header__text"
           ><img
@@ -27,6 +27,7 @@
             alt="Логотип сайту з котом"
             width="24"
             height="24"
+            class="header__logo"
           />Котодім</a
         >
         <nav class="header__navigation">
@@ -39,10 +40,12 @@
       </div>
     </header>
     <main>
+      <div><a href="#up" class="anchor link">Нагору</a></div>
       <div class="main__container container">
           <section class="hero">
+            <p id="hero__text"></p>
             <div class="hero__information">
-            <h1 class="hero__information--title">Привіт, людино</h1>
+            <h1 class="hero__information--title" id="title">Привіт, людино</h1>
             <p class="hero__information--text">
               Бракує в житті шовкових лапок, м’якенького пухнастого животика,
               теплого муррркотіння й веселого розгардіяшу?Візьми собі котика.
@@ -105,7 +108,7 @@
     <footer class="page-footer">
       <div class="page-footer__container container">
         <div>
-          <img src="./img/cat-logo.svg" alt="Логотип сайту з котом" width="24" height="24" />
+          <img src="./img/cat-logo.svg" alt="Логотип сайту з котом" width="24" height="24" class="page-footer__logo"/>
           <p class="page-footer__text">
             Котики — то щастя. <br />
             Забирай, люби й ставай щасливішим.

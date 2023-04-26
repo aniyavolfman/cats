@@ -151,6 +151,7 @@ body {
 }
 
 .hero {
+  position: relative;
   display: flex;
   justify-content: end;
   flex-direction: column;
@@ -177,6 +178,52 @@ body {
   }
 }
 
+#hero__text {
+  position: absolute;
+  top: 40%;
+  right: 2%;
+  font-family: monospace;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.1em solid black;
+  animation: typing 4s steps(10, end), blink-caret, 0.5s step-end infinite;
+}
+@media screen and (min-width: 480px) {
+  #hero__text {
+    right: 10%;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  #hero__text {
+    font-size: 20px;
+    right: 2%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #hero__text {
+    font-size: 28px;
+    right: 10%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 6em;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
 .hero__information {
   padding: 10px;
   color: #ffffff;
@@ -217,6 +264,55 @@ body {
   }
 }
 
+.anchor {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .anchor {
+    z-index: 3;
+    position: fixed;
+    display: flex;
+    right: 30px;
+    bottom: 120px;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    background-color: #d7f463;
+    border: none;
+    letter-spacing: 0.06em;
+    line-height: 1.88;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: inherit;
+    font-weight: bold;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .anchor:hover, .anchor:focus {
+    background-color: #9c6fe2;
+  }
+}
+
+.page-footer__logo,
+.header__logo {
+  width: 24px;
+  height: 24px;
+  animation-name: spin;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .section {
   margin-top: 20px;
 }
