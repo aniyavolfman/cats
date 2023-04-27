@@ -19,7 +19,7 @@ git clone https://github.com/aniyavolfman/cats.git
 ```
 ## Features
 
-* **Scroll-to-top Button**: A button is provided on the website to allow users to quickly scroll back to the top of the page.
-* **Animation**: Animations have been used throughout the website to create a more engaging user experience.
-* **Lazy Loading Images**: To improve website performance, images are loaded lazily, only when they are needed.
+- Scroll-to-top Button: A button is provided on the website to allow users to quickly scroll back to the top of the page.
+- Animation: Animations have been used throughout the website to create a more engaging user experience.
+- Lazy Loading Images: To improve website performance, images are loaded lazily, only when they are needed.
 
