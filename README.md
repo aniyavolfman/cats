@@ -8,7 +8,8 @@ This website is built using the following technologies:
 - HTML5,
 - Sass,
 - JavaScript,
-- Adaptive/Responsive design.
+- Adaptive/Responsive design,
+- Responsive & retina images.
 ## Installation
 
 Clone the repository:
